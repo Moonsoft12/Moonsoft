@@ -1,0 +1,166 @@
+@media screen and (max-width: 500px) {
+        * {
+                box-sizing: border-box;
+        }
+        body, html {
+                margin: 0px;
+                padding: 0px;
+                height: 90%;
+                width: 100%;
+                background-color: #010409;
+                color: #EEEEEE;
+        }
+        #container {
+                /*border-bottom: 1.5px solid #C4C4C7;*/
+                height: 60px;
+                vertical-align: middle;
+                background-color: #161B21;
+                color: #FFFFFF;
+                position: fixed;
+                top: 0px;
+                width: 100%;
+        }
+        #dd-btn {
+                margin-left: 20px;
+                display: inline;
+                background-color: transparent;
+                color: inherit;
+                vertical-align: middle;
+        }
+        #dd {
+                display: inline;
+        }
+        #dd-content {
+                position: absolute;
+                width: 100%;
+                height: 0px;
+                transition: height 1s;
+                overflow: hidden;
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                background-color: #161B21;
+                color: #EEEEEE;
+                font-weight: bold;
+                font-size: 13px;
+                /*border-bottom: 1.5px solid #C4C4C7;
+                border-top: 1.5px solid #C4C4C7;*/
+        }
+        #dd:hover > #dd-content {
+                height: 140px;
+                
+        }
+        #dd-content > p {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                padding-top: 7px;
+        }
+        #mos_log {
+                display: inline;
+                vertical-align: middle;
+                margin-left: 45px;
+        }
+        #mos_txta {
+                font-family: 'Georama', sans-serif;
+                font-weight: bold;
+                display: inline;
+                margin-left: 2px;
+                font-size: 20px;
+                vertical-align: middle;
+        }
+        /*#changeBg {
+                margin-left: 40px;
+                vertical-align: middle;
+        }*/
+        #github {
+                margin-left: 70px;
+                vertical-align: middle;
+        }
+        #mail {
+                margin-left: 40px;
+                vertical-align: middle;
+        }
+        #info {
+                vertical-align: middle;
+        }
+        #txt_1 {
+                text-align: left;
+                margin-left: 20px;
+                margin-top: 80px;
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+        }
+        #cntr_next {
+                margin-top: 200px;
+        }
+        #next_t {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                /*background-color: #13B27D;*/
+                background-color: #383D43;
+                border-radius: 3px;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                width: 100px;
+                font-size: 15px;
+                color: #EEEEEE;
+        }
+        .buttDark {
+                float: right;
+                right: 40px;
+                top: 40px;
+                position: absolute;
+        }
+        .thec {
+                color: #FF8300;
+        }
+        .bottom {
+                /*border-top: 1px solid #C4C4C7;*/
+                width: 100%;
+                height: 50px;
+                background-color: #161B21;
+                color: #FFFFFF;
+                position: fixed;
+                bottom: 0px;
+        }
+        .bottom_con {
+                display: inline;
+                margin-left: 14.5%;
+                vertical-align: middle;
+        }
+        #txt_2 {
+                font-family: 'Georama', sans-serif;
+                font-size: 13px;
+                margin-left: 20px;
+                background-color: #383D43;
+                width: 85%;
+                padding: 20px;
+                border-left: 3px solid #00FF97;
+                border-radius: 3px;
+                line-height: 17px;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+        }
+        .b-link {
+                margin-top: 100px;
+        }
+        .b-link-ctn {
+                display: inline;
+                margin: 5px;
+                padding: 5px;
+                font-family: 'Georama', sans-serif;
+                font-size: 12px;
+                /*background-color: #383D43;
+                border-radius: 3px;*/
+        }
+        .private {
+                text-decoration: underline;
+                text-transform: capitalize;
+        }
+}
+@media screen and (min-width: 460px) {
+        #bdy_1 {
+                background-color: black;
+                visibility: hidden;
+        }
+}
