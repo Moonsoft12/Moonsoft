@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" contenteditable="false">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title> Wellcome Page </title>
+                <script src="/Moonsoft/main.js"></script>
+                <link rel="stylesheet" href="/Moonsoft/style.css">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        </head>
+        <body id="bdy_1">
+                <div id="container">
+                        <div id="dd">
+                                <svg id="dd-btn" xmlns="http://www.w3.org/2000/svg" width="35" height="auto" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>  
+                                <div id="dd-content">
+                                        <p onclick="home()"> Home </p>
+                                        <p onclick="contact()"> Contact </p>
+                                        <p onclick="forum()"> Forum </p>
+                                </div>
+                        </div>
+                        <img id="mos_log" width="40px" height="auto" src="/Media/moonsoft_logo.png">
+                        <h3 id="mos_txta"> Moonsoft </h3>
+                        <!-- <svg id="changeBg" onclick="changeBg()" xmlns="http://www.w3.org/2000/svg" width="25" height="auto" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                        </svg> -->
+                        <svg id="github" onclick="github()" xmlns="http://www.w3.org/2000/svg" width="25" height="auto" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        <svg id="mail" onclick="mail()" xmlns="http://www.w3.org/2000/svg" width="25" height="auto" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                        </svg>
+                </div>
+                <p id="txt_1"> Wellcome To <b>Moonsoft</b> Official Website! </p>
+                <p id="txt_2">
+                        This is the official website of Moonsoft, find information about Moonsoft here. Moonsoft will provide a community about Programming, join your programmer community and it's all free!. While in the Moonsoft community forum, you are expected to comply with our policies, read the Moonsoft <span class="private" onclick="privacy()">privacy policy.</span> 
+                </p>
+                <center id="cntr_next">
+                        <p onclick="home()" id="next_t"> Next </p>
+                </center>
+                <center>
+                <div class="b-link">
+                        <p class="b-link-ctn">
+                                <b>©</b> 2021 Moonsoft
+                        </p>
+                        <p class="b-link-ctn" onclick="privacy()">
+                                Privacy Policy
+                        </p>
+                        <p class="b-link-ctn" onclick="forum()">
+                                Forum
+                        </p>
+                        <p class="b-link-ctn" onclick="contact()">
+                                Contact
+                        </p>
+                </div>
+                </center>
+                <div class="bottom">
+                        <div class="bottom_con">
+                                <svg onclick="home()" xmlns="http://www.w3.org/2000/svg" width="28px" height="auto" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                </svg>
+                        </div>
+                        <div class="bottom_con">
+                                <svg onclick="window.location.reload()" xmlns="http://www.w3.org/2000/svg" width="28px" height="auto" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                                        <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+                                </svg>
+                        </div>
+                        <div class="bottom_con">
+                                <svg onclick="chat()" xmlns="http://www.w3.org/2000/svg" width="25px" height="auto" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                        <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                        <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                        </div>
+                        <div class="bottom_con">
+                                <svg onclick="info()" xmlns="http://www.w3.org/2000/svg" width="25" height="auto" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                        </div>
+                </div>
+        </body>
+</html>
